@@ -3,16 +3,16 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-    <bean name="/1.htm"
-		class="com.haitao.test.common.controller.HelloWorldController" />
+    <bean name="/welcome.htm"
+		class="com.haitao.test.controller.HelloWorldController" />
 
     <bean id="viewResolver"
     	class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
         <property name="prefix">
-            <value>/WEB-INF/pages/</value>
+            <value>/WEB-INF/</value>
         </property>
         <property name="suffix">
-            <value>.jsp</value>
+            <value></value>
         </property>
     </bean>
 
